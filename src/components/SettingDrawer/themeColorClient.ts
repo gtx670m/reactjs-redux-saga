@@ -21,6 +21,7 @@ export default {
       // new colors array, one-to-one corresponde with `matchColors`
       newColors: this.getAntdSerials(color),
       changeUrl(cssUrl: string): string {
+        console.log('cssUrl', cssUrl)
         // while router is not `hash` mode, it needs absolute path
         return `/${cssUrl}`;
       },
